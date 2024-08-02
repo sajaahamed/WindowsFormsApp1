@@ -12,8 +12,9 @@ namespace WindowsFormsApp1
 
         public void error()
         {
-            lbl_error.Text = error_msg.ToString();
+            
             messge_box messge_Box = new messge_box();
+            lbl_error.Text = error_msg.ToString();
             messge_Box.Show();
         }
 
