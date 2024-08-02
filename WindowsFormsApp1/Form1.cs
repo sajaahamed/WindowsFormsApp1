@@ -34,6 +34,10 @@ namespace WindowsFormsApp1
         {
             try
             {
+                if(guna2TextBox1.Text == null) 
+                {
+                    //error message to show
+                }
                 string password = guna2TextBox1.Text;
                 string name = guna2TextBox2.Text;
                 if (name == "0000" && password == "0000")
@@ -48,15 +52,16 @@ namespace WindowsFormsApp1
                 {
                     messge_box messge_Box = new messge_box();
                     messge_Box.Show();
-                   
                     
+
+
                 }
             }
             catch (Exception) {
                 
                 MessageBox.Show("Somthing Went Wrong!\n Please Contact Developer");
             }
-            Console.Beep(1000,440);
+            
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
