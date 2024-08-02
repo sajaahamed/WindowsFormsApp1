@@ -174,7 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(988, 561);
+            this.ClientSize = new System.Drawing.Size(999, 576);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.guna2Button);

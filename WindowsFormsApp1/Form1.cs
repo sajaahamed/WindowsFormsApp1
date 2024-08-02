@@ -36,8 +36,18 @@ namespace WindowsFormsApp1
             {
                 if(guna2TextBox1.Text == null) 
                 {
-                    //error message to show
+                    Errors e1 = new Errors();
+                    e1.error_msg = "password cannot be empty!";
+                    e1.error();
                 }
+
+                if (guna2TextBox2.Text == null)
+                {
+                    Errors e1 = new Errors();
+                    e1.error_msg = "user name cannot be empty!";
+                    e1.error();
+                }
+
                 string password = guna2TextBox1.Text;
                 string name = guna2TextBox2.Text;
                 if (name == "0000" && password == "0000")
@@ -50,10 +60,9 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    messge_box messge_Box = new messge_box();
-                    messge_Box.Show();
-                    
-
+                    Errors e2 = new Errors();
+                    e2.error_msg = "login fail!";
+                    e2.error();
 
                 }
             }

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class messge_box : Form
+    public partial class messge_box : Form 
     {
         public messge_box()
         {
