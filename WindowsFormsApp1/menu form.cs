@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class menu_form : Form
     {
-        
+        bool slide;
         public menu_form()
         {
             InitializeComponent();
@@ -48,9 +48,32 @@ namespace WindowsFormsApp1
 
         }
 
-        private void sidebarTimer(object sender, EventArgs e)
+        private void SidebarTimer_Tick(object sender, EventArgs e)
         {
+            if(slide)
+            {
+                fp_slidebar.Width -= 200;
+                if (fp_slidebar.Width == fp_slidebar.MinimumSize.Width)
+                {
+                    slide= false;
+                    SidebarTimer.Stop();
+                }
+            }
+            else
+            {
+                fp_slidebar.Width += 200;
+                if (fp_slidebar.Width == fp_slidebar.MaximumSize.Width)
+                {
+                    slide = true;
+                    SidebarTimer.Stop();
+                }
+            }
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            SidebarTimer.Start();
         }
     }
 }
