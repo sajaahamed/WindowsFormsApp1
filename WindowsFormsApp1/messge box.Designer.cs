@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_error = new System.Windows.Forms.Label();
             this.guna2Button = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel1.SuspendLayout();
@@ -45,18 +45,17 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // label1
+            // lbl_error
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.MintCream;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(153, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "LOGIN FAIL!";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lbl_error.AutoSize = true;
+            this.lbl_error.BackColor = System.Drawing.Color.MintCream;
+            this.lbl_error.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_error.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_error.Location = new System.Drawing.Point(153, 78);
+            this.lbl_error.Name = "lbl_error";
+            this.lbl_error.Size = new System.Drawing.Size(0, 29);
+            this.lbl_error.TabIndex = 0;
+            this.lbl_error.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2Button
             // 
@@ -79,7 +78,7 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.Controls.Add(this.guna2Button);
-            this.guna2GradientPanel1.Controls.Add(this.label1);
+            this.guna2GradientPanel1.Controls.Add(this.lbl_error);
             this.guna2GradientPanel1.Location = new System.Drawing.Point(2, 1);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(475, 275);
@@ -109,6 +108,6 @@
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button;
-        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label lbl_error;
     }
 }

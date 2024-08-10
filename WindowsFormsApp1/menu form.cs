@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class menu_form : Form
     {
-        bool sidebarExpand;
+        
         public menu_form()
         {
             InitializeComponent();

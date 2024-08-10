@@ -64,7 +64,7 @@
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(1291, 12);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(1345, 12);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(45, 40);
             this.guna2ImageButton1.Size = new System.Drawing.Size(40, 40);
@@ -82,7 +82,7 @@
             this.guna2Button.FillColor = System.Drawing.Color.LimeGreen;
             this.guna2Button.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button.ForeColor = System.Drawing.Color.White;
-            this.guna2Button.Location = new System.Drawing.Point(1164, 577);
+            this.guna2Button.Location = new System.Drawing.Point(1434, 782);
             this.guna2Button.Name = "guna2Button";
             this.guna2Button.Size = new System.Drawing.Size(145, 51);
             this.guna2Button.TabIndex = 6;
@@ -100,7 +100,7 @@
             this.fp_slidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.fp_slidebar.Location = new System.Drawing.Point(0, 0);
             this.fp_slidebar.Name = "fp_slidebar";
-            this.fp_slidebar.Size = new System.Drawing.Size(281, 660);
+            this.fp_slidebar.Size = new System.Drawing.Size(281, 623);
             this.fp_slidebar.TabIndex = 8;
             // 
             // panel1
@@ -250,9 +250,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+
             this.ClientSize = new System.Drawing.Size(1343, 660);
             this.ClientSize = new System.Drawing.Size(1397, 623);
             this.Controls.Add(this.dataGridView1);
+
+            this.ClientSize = new System.Drawing.Size(1397, 623);
+
             this.Controls.Add(this.fp_slidebar);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.guna2Button);
