@@ -56,6 +56,7 @@
             // 
             // guna2ImageButton1
             // 
+            this.guna2ImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
@@ -71,6 +72,7 @@
             // 
             // guna2Button
             // 
+            this.guna2Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button.BackColor = System.Drawing.Color.MintCream;
             this.guna2Button.BorderRadius = 12;
             this.guna2Button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -80,7 +82,7 @@
             this.guna2Button.FillColor = System.Drawing.Color.LimeGreen;
             this.guna2Button.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button.ForeColor = System.Drawing.Color.White;
-            this.guna2Button.Location = new System.Drawing.Point(1434, 782);
+            this.guna2Button.Location = new System.Drawing.Point(1240, 527);
             this.guna2Button.Name = "guna2Button";
             this.guna2Button.Size = new System.Drawing.Size(145, 51);
             this.guna2Button.TabIndex = 6;
@@ -89,16 +91,19 @@
             // 
             // fp_slidebar
             // 
+            this.fp_slidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.fp_slidebar.BackColor = System.Drawing.Color.DarkSlateGray;
             this.fp_slidebar.Controls.Add(this.panel1);
             this.fp_slidebar.Controls.Add(this.panel2);
             this.fp_slidebar.Controls.Add(this.panel3);
             this.fp_slidebar.Controls.Add(this.panel4);
             this.fp_slidebar.Controls.Add(this.panel5);
-            this.fp_slidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.fp_slidebar.Location = new System.Drawing.Point(0, 0);
+            this.fp_slidebar.MaximumSize = new System.Drawing.Size(288, 0);
+            this.fp_slidebar.MinimumSize = new System.Drawing.Size(70, 623);
             this.fp_slidebar.Name = "fp_slidebar";
-            this.fp_slidebar.Size = new System.Drawing.Size(281, 623);
+            this.fp_slidebar.Size = new System.Drawing.Size(70, 623);
             this.fp_slidebar.TabIndex = 8;
             // 
             // panel1
@@ -113,12 +118,13 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(26, 42);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 42);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(55, 51);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
@@ -140,9 +146,9 @@
             this.guna2Button1.FillColor = System.Drawing.Color.LimeGreen;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(-14, -13);
+            this.guna2Button1.Location = new System.Drawing.Point(72, -13);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(298, 80);
+            this.guna2Button1.Size = new System.Drawing.Size(212, 80);
             this.guna2Button1.TabIndex = 9;
             this.guna2Button1.Text = "Settings";
             // 
@@ -165,9 +171,9 @@
             this.guna2Button2.FillColor = System.Drawing.Color.LimeGreen;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(-14, -13);
+            this.guna2Button2.Location = new System.Drawing.Point(72, -13);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(298, 80);
+            this.guna2Button2.Size = new System.Drawing.Size(212, 80);
             this.guna2Button2.TabIndex = 9;
             this.guna2Button2.Text = "Take Away";
             // 
@@ -190,9 +196,9 @@
             this.guna2Button3.FillColor = System.Drawing.Color.LimeGreen;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(-14, -13);
+            this.guna2Button3.Location = new System.Drawing.Point(72, -13);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(298, 80);
+            this.guna2Button3.Size = new System.Drawing.Size(212, 80);
             this.guna2Button3.TabIndex = 9;
             this.guna2Button3.Text = "Resturant";
             // 
@@ -215,9 +221,9 @@
             this.guna2Button4.FillColor = System.Drawing.Color.LimeGreen;
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(-14, -13);
+            this.guna2Button4.Location = new System.Drawing.Point(72, -13);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(298, 80);
+            this.guna2Button4.Size = new System.Drawing.Size(212, 80);
             this.guna2Button4.TabIndex = 9;
             this.guna2Button4.Text = "Expences";
             // 
@@ -229,7 +235,7 @@
             // 
             // SidebarTimer
             // 
-            this.SidebarTimer.Tick += new System.EventHandler(this.sidebarTimer);
+            this.SidebarTimer.Tick += new System.EventHandler(this.SidebarTimer_Tick);
             // 
             // menu_form
             // 
@@ -237,7 +243,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1397, 623);
+            this.ClientSize = new System.Drawing.Size(1392, 578);
             this.Controls.Add(this.fp_slidebar);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.guna2Button);
