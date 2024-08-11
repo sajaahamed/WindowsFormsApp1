@@ -161,6 +161,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(212, 80);
             this.guna2Button2.TabIndex = 9;
             this.guna2Button2.Text = "Take Away";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // panel4
             // 
