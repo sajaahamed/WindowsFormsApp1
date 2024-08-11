@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp1
 {
@@ -35,25 +32,45 @@ namespace WindowsFormsApp1
         
         private void guna2Button_Click(object sender, EventArgs e)
         {
-            MySqlConnection conn = new dbms().ConnectDb();
-            conn.Open();
+            try
+            {
+                if(guna2TextBox1.Text == null) 
+                {
+                    Errors e1 = new Errors();
+                    e1.error_msg = "password cannot be empty!";
+                    e1.error();
+                }
 
-            MySqlCommand cmd = new MySqlCommand("select * from login where user_name='" + txtuser_name.Text + "' AND password='" + txtpassword.Text + "'",conn);
-            MySqlDataReader reader = cmd.ExecuteReader();
-            if (reader.Read())
-            {
-                menu_form menu_Form = new menu_form();
-                menu_Form.Show();
-                this.Hide();
+                if (guna2TextBox2.Text == null)
+                {
+                    Errors e1 = new Errors();
+                    e1.error_msg = "user name cannot be empty!";
+                    e1.error();
+                }
+
+                string password = guna2TextBox1.Text;
+                string name = guna2TextBox2.Text;
+                if (name == "0000" && password == "0000")
+                {
+                    menu_form form = new menu_form();
+                    form.Show();
+                    this.Hide();
+
+
+                }
+                else
+                {
+                    Errors e2 = new Errors();
+                    e2.error_msg = "login fail!";
+                    e2.error();
+
+                }
             }
-            else
-            {
-                messge_box messge= new messge_box();
-                messge.Show();
-                return;
+            catch (Exception) {
+                
+                MessageBox.Show("Somthing Went Wrong!\n Please Contact Developer");
             }
-            reader.Close();
-            conn.Close();
+            
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
