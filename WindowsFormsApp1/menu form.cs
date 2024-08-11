@@ -75,5 +75,12 @@ namespace WindowsFormsApp1
         {
             SidebarTimer.Start();
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            takeawaycs takeawaycs = new takeawaycs();
+            takeawaycs.Show();
+            this.Hide();
+        }
     }
 }

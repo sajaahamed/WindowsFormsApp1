@@ -103,7 +103,7 @@
             this.fp_slidebar.MaximumSize = new System.Drawing.Size(288, 0);
             this.fp_slidebar.MinimumSize = new System.Drawing.Size(70, 623);
             this.fp_slidebar.Name = "fp_slidebar";
-            this.fp_slidebar.Size = new System.Drawing.Size(70, 623);
+            this.fp_slidebar.Size = new System.Drawing.Size(288, 623);
             this.fp_slidebar.TabIndex = 8;
             // 
             // panel1
@@ -176,6 +176,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(212, 80);
             this.guna2Button2.TabIndex = 9;
             this.guna2Button2.Text = "Take Away";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // panel4
             // 
