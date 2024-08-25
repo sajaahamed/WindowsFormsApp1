@@ -17,6 +17,11 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        public void setLabelText(string text)
+        {
+            lbl_error.Text = text;
+        }
+
         private void guna2Button_Click(object sender, EventArgs e)
         {
             

@@ -51,10 +51,11 @@
             this.lbl_error.BackColor = System.Drawing.Color.MintCream;
             this.lbl_error.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_error.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_error.Location = new System.Drawing.Point(153, 78);
+            this.lbl_error.Location = new System.Drawing.Point(142, 78);
             this.lbl_error.Name = "lbl_error";
-            this.lbl_error.Size = new System.Drawing.Size(0, 29);
+            this.lbl_error.Size = new System.Drawing.Size(183, 29);
             this.lbl_error.TabIndex = 0;
+            this.lbl_error.Text = " hello im eroor";
             this.lbl_error.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2Button
@@ -106,8 +107,8 @@
         #endregion
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button;
         public System.Windows.Forms.Label lbl_error;
+        public Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        public Guna.UI2.WinForms.Guna2Button guna2Button;
     }
 }

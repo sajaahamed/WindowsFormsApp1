@@ -103,7 +103,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dbms.cs" />
+    <Compile Include="erorr.cs" />
     <Compile Include="Errors.cs">
       <SubType>Form</SubType>
     </Compile>

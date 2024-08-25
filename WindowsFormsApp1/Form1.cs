@@ -35,25 +35,16 @@ namespace WindowsFormsApp1
         
         private void guna2Button_Click(object sender, EventArgs e)
         {
-            MySqlConnection conn = new dbms().ConnectDb();
-            conn.Open();
-
-            MySqlCommand cmd = new MySqlCommand("select * from login where user_name='" + txtuser_name.Text + "' AND password='" + txtpassword.Text + "'",conn);
-            MySqlDataReader reader = cmd.ExecuteReader();
-            if (reader.Read())
-            {
+            string user = txtuser_name.Text;
+            string password = txtpassword.Text;
+            if (user=="0000"&& password=="0000") 
+            { 
                 menu_form menu_Form = new menu_form();
                 menu_Form.Show();
                 this.Hide();
             }
-            else
-            {
-                messge_box messge= new messge_box();
-                messge.Show();
-                return;
-            }
-            reader.Close();
-            conn.Close();
+            
+            
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)

@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-         
+
         private void menu_form_Load(object sender, EventArgs e)
         {
 
@@ -40,7 +40,7 @@ namespace WindowsFormsApp1
 
         private void slidebartimer(object sender, EventArgs e)
         {
-           
+
         }
 
         private void guna2Button_Click(object sender, EventArgs e)
@@ -50,12 +50,12 @@ namespace WindowsFormsApp1
 
         private void SidebarTimer_Tick(object sender, EventArgs e)
         {
-            if(slide)
+            if (slide)
             {
                 fp_slidebar.Width -= 200;
                 if (fp_slidebar.Width == fp_slidebar.MinimumSize.Width)
                 {
-                    slide= false;
+                    slide = false;
                     SidebarTimer.Stop();
                 }
             }
@@ -79,15 +79,15 @@ namespace WindowsFormsApp1
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();  
+            Form2 form2 = new Form2();
             form2.Show();
             this.Close();
 
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            takeawaycs takeawaycs = new takeawaycs();
-            takeawaycs.Show();
-            this.Hide();
+            
+
+
+
+
 
         }
     }

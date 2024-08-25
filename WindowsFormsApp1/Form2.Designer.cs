@@ -102,7 +102,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(57, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 26);
+            this.label3.Size = new System.Drawing.Size(172, 24);
             this.label3.TabIndex = 10;
             this.label3.Text = "Update Password";
             // 
@@ -150,7 +150,7 @@
             this.guna2Button1.FillColor = System.Drawing.Color.LimeGreen;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(969, 503);
+            this.guna2Button1.Location = new System.Drawing.Point(757, 437);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(159, 50);
             this.guna2Button1.TabIndex = 13;
@@ -162,7 +162,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(1218, 599);
+            this.ClientSize = new System.Drawing.Size(1163, 599);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.label1);
